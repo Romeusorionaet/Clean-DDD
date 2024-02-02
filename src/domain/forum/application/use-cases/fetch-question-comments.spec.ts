@@ -11,6 +11,7 @@ describe("Fetch Question Comments ", () => {
   beforeEach(() => {
     inMemoryQuestionCommentsRepository =
       new InMemoryQuestionCommentsRepository();
+
     sut = new FetchQuestionCommentsUseCase(inMemoryQuestionCommentsRepository);
   });
 
