@@ -3,7 +3,7 @@ import { InMemoryAnswersRepository } from "@/test/repositories/in-memory-answers
 import { DeleteAnswerUseCase } from "./delete-answer";
 import { UniqueEntityID } from "@/core/entities/unique-entity-id";
 import { makeAnswer } from "@/test/factories/make-answer";
-import { NotAllowedError } from "./errors/not-allowed-error";
+import { NotAllowedError } from "@/core/errors/errors/not-allowed-error";
 import { InMemoryAnswerAttachmentsRepository } from "@/test/repositories/in-memory-attachment-repository";
 import { makeAnswerAttachment } from "@/test/factories/make-answer-attachment-repository";
 
@@ -52,6 +52,7 @@ describe("Delete Answer", () => {
       { authorId: new UniqueEntityID("author-1") },
       new UniqueEntityID("answer-1"),
     );
+
     await inMemoryAnswersRepository.create(newAnswer);
 
     const result = await sut.execute({
