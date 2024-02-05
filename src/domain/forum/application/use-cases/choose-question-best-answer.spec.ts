@@ -7,7 +7,7 @@ import { ChooseQuestionBestAnswerUseCase } from "./choose-question-best-answer";
 import { makeQuestion } from "@/test/factories/make-question";
 import { NotAllowedError } from "@/core/errors/errors/not-allowed-error";
 import { InMemoryQuestionAttachmentsRepository } from "@/test/repositories/in-memory-question-attachments-repository";
-import { InMemoryAnswerAttachmentsRepository } from "@/test/repositories/in-memory-attachment-repository";
+import { InMemoryAnswerAttachmentsRepository } from "@/test/repositories/in-memory-answers-attachment-repository";
 
 let inMemoryAnswersRepository: InMemoryAnswersRepository;
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository;

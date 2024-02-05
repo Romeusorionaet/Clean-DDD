@@ -3,7 +3,7 @@ import { InMemoryAnswersRepository } from "@/test/repositories/in-memory-answers
 import { FetchQuestionAnswersUseCase } from "./fetch-question-answers";
 import { makeAnswer } from "@/test/factories/make-answer";
 import { UniqueEntityID } from "@/core/entities/unique-entity-id";
-import { InMemoryAnswerAttachmentsRepository } from "@/test/repositories/in-memory-attachment-repository";
+import { InMemoryAnswerAttachmentsRepository } from "@/test/repositories/in-memory-answers-attachment-repository";
 
 let inMemoryAnswerAttachmentsRepository: InMemoryAnswerAttachmentsRepository;
 let inMemoryAnswersRepository: InMemoryAnswersRepository;
