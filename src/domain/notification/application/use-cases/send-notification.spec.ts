@@ -1,5 +1,5 @@
 import { expect, test, describe, beforeEach } from "vitest";
-import { SendNotificationUseCase } from "./send-notofication";
+import { SendNotificationUseCase } from "./send-notification";
 import { InMemoryNotificationsRepository } from "@/test/repositories/in-memory-notifocations-repository";
 
 let inMemoryNotificationsRepository: InMemoryNotificationsRepository;
